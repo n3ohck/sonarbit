@@ -6,24 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SonarBit: Conciertos en Vivo y Música Sin Límites</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        html {
-            background: url(assets/images/background.jpg) no-repeat right;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body class="">
-    <header>
-    </header>
-    <main>
-        <div class="flex justify-center items-center h-screen">
+<body>
+    
+    <div class="containerSonarBit">
+        <div id="slideshow">
+            <div class="elemnt"></div>
+            <div class="elemnt1"></div>
+            <div class="elemnt2"></div>
+            <div class="elemnt3"></div>
+        </div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center text-bolder items-center h-screen position-absolute">
             <img src="assets/images/logotipo.png" width="10%" class="rounded-full shadow-xl"
                 alt="SonarBit: Conciertos en Vivo y Musica Sin Limites"
                 title="SonarBit: Conciertos en Vivo y Musica Sin Limites">
         </div>
-    </main>
-    <footer class="flex justify-center">🎧Todos los derechos reservados al mundo.🎧 | <a href="https://www.facebook.com/Sonarbit" target="_blank">Facebook</a></footer>
+        <footer class="absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-2/2 shadow-xl text-white flex justify-center box-decoration-slice bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2">
+            🎧Todos los derechos reservados al mundo.🎧 | <a
+            href="https://www.facebook.com/Sonarbit" target="_blank">Facebook</a></footer>
+    </div>
+    
 </body>
 
 </html>
