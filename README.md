@@ -1,1 +1,3 @@
-# este es el readme de mi proyecto 😉
+# Bienvenido al resultado del primer modulo del Diplomado para Full Stack Developer impartido por Cenaltec Chihuahua impartido por el profesor @KiraBelak. Dejame introducirte un poco. La idea es recordar mis viejos tiempo; cuando podia crear conceptos tecnologicos propios y que estos pasaban a ser parte de los miles de portales de diseño conceptual y moderno, osea que te estoy hablando del 2010 aproximadamente. 
+
+# El tema es que este proyecto es uno de los tantos intentos que realice con varios de mis amigos. Entonces pues terminamos creando una radio en linea que transmitia eventos de musica electronica en vivo via internet. En su momento transmitimos a INNA, entrevistamos a NERVO y pues bueno . Bebimos mucho... Bueno espero que disfrutes la musica y del diseño tanto como yo disfrute hacerlo con las nuevas tecnologias que estoy aprendiendo. Tailwind CSS.
