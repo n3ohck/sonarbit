@@ -7,27 +7,68 @@
     <title>SonarBit: Conciertos en Vivo y Música Sin Límites</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/musicPlayer.css">
 </head>
 
 <body>
-    
-    <div class="containerSonarBit">
-        <div id="slideshow">
-            <div class="elemnt"></div>
-            <div class="elemnt1"></div>
-            <div class="elemnt2"></div>
-            <div class="elemnt3"></div>
-        </div>
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center text-bolder items-center h-screen position-absolute">
-            <img src="assets/images/logotipo.png" width="10%" class="rounded-full shadow-xl"
-                alt="SonarBit: Conciertos en Vivo y Musica Sin Limites"
-                title="SonarBit: Conciertos en Vivo y Musica Sin Limites">
-        </div>
-        <footer class="absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-2/2 shadow-xl text-white flex justify-center box-decoration-slice bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2">
-            🎧Todos los derechos reservados al mundo.🎧 | <a
-            href="https://www.facebook.com/Sonarbit" target="_blank">Facebook</a></footer>
+<div class="containerSonarBit">
+    <div id="slideshow">
+        <div class="elemnt"></div>
+        <div class="elemnt1"></div>
+        <div class="elemnt2"></div>
+        <div class="elemnt3"></div>
     </div>
-    
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center text-bolder items-center h-screen position-absolute">
+        <div class='music-card playing'>
+
+            <div class='image'></div>
+
+            <div class='wave'></div>
+            <div class='wave'></div>
+            <div class='wave'></div>
+
+            <div class='info'>
+                <h2 class='title'>Prodigy</h2>
+                <div class='artist'>Dango</div>
+            </div>
+        </div>
+    </div>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center text-bolder items-center h-screen position-absolute">
+        <img src="assets/images/logotipo.png" width="10%" class="rounded-full shadow-xl"
+             alt="SonarBit: Conciertos en Vivo y Musica Sin Limites"
+             title="SonarBit: Conciertos en Vivo y Musica Sin Limites">
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-3/4" style="margin: 6% 0 0 15%;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 fa-pause trigger">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25v13.5m-7.5-13.5v13.5" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 fa-play trigger">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+            </svg>
+        </div>
+    </div>
+</div>
+
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+    let audio = new Audio('assets/music/prodigy.mp3');
+    audio.volume = .9;
+    audio.autoplay = true;
+    $('.fa-play').show();
+    $('.fa-pause').hide();
+    $('.trigger').click(function() {
+        if (audio.paused === false) {
+            audio.pause();
+            $('.fa-play').show();
+            $('.fa-pause').hide();
+            $('.music-card').removeClass('playing');
+        } else {
+            audio.play();
+            $('.fa-pause').show();
+            $('.fa-play').hide();
+            $('.music-card').addClass('playing');
+        }
+    });
+</script>
 
 </html>
