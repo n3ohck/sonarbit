@@ -1,4 +1,4 @@
-let audio = new Audio('assets/music/prodigy.mp3');
+let audio = new Audio('https://26453.live.streamtheworld.com/SAM04AAC372_SC');
 audio.volume = .9;
 audio.autoplay = true;
 $('.fa-play').show();
