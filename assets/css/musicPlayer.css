@@ -142,3 +142,12 @@
         margin: 3% 0 0 55% !important;
     }
 }
+
+@media screen and (max-width: 1920px) {
+    .logo {
+        width: 10% !important;
+    }
+    .botones{
+        margin: -25px 0 0 15% !important;
+    }
+}
