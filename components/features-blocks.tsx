@@ -39,8 +39,11 @@ export default function FeaturesBlocks() {
                                     </svg>
                                 </button>
                             </div>
+
                             <Image src={LogoMr} width={120} alt="SonarBit: Conciertos en Vivo y Musica Sin Limites"
-                                   title="SonarBit: Conciertos en Vivo y Musica Sin Limites" className="absolute rounded mt-3 mr-3/4 shadow-xl logo bg-white" />
+                                   title="SonarBit: Conciertos en Vivo y Musica Sin Limites"
+                                   className="absolute rounded mt-3 mr-3/4 shadow-xl logo bg-white"/>
+                            <div className="bg-red-700 text-white absolute shadow-2xl p-1 rounded text-sm drop-shadow-xl">LIVE</div>
                         </div>
 
                         {/* 2nd item */}
